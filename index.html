@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de imagenes</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Galeria de imagenes</h1>
+    <div class="row">
+        <div class="column">
+            <div class="galeria">
+                <img src="img/Imagen1.jpg" class="imagen" onclick="mostrarImagen('img/Imagen1.jpg')">  
+            </div>
+            <div class="galeria">
+                <img src="img/imagen2.jpg" class="imagen" onclick="mostrarImagen('img/imagen2.jpg')">  
+            </div>
+            <div class="galeria">
+                <img src="img/imagen3.jpg" class="imagen" onclick="mostrarImagen('img/imagen3.jpg')">  
+            </div>
+        </div>
+        <div class="column">
+            <div class="galeria">
+                <img src="img/imagen4.jpg" class="imagen" onclick="mostrarImagen('img/imagen4.jpg')">  
+            </div>
+            <div class="galeria">
+                <img src="img/imagen5.jpg" class="imagen" onclick="mostrarImagen('img/imagen5.jpg')">  
+            </div>
+            <div class="galeria">
+                <img src="img/imagen6.jpg" class="imagen" onclick="mostrarImagen('img/imagen6.jpg')">  
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal" onclick="cerrarImagen()">
+        <span class="cerrar" onclick="cerrarImagen()">&times;</span>
+        <img id="imagenMostrada" src="" alt="Imagen agrandada">
+    </div>
+    <script src="maximizar.js"></script>
+</body>
+</html>
+
